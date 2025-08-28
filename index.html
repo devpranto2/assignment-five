@@ -4,8 +4,78 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+        <!-- fontawessomre cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
 </head>
-<body>
-    <h1>fivee</h1>
+<body class="bg-[#f5fff6]">
+            <!-- header section -->
+    <header class="bg-white">
+        <div class="nav flex justify-between items-center p-5 mx-12">
+            <div class="left flex items-center gap-[10px]">
+                <img class="h-[50px] w-[50px]" src="assets/logo.png" alt="">
+                <h1 class="text-[30px] text-[#066747] font-extrabold leading-none">Emergency <br>Service</h1>
+            </div>
+            <div class="right flex items-center gap-[10px]">
+                <div class="h-[52px] w-[123px] bg-[#ecfff0] rounded-3xl flex justify-center items-center gap-[10px]">
+                    <h1 class="font-extrabold text-[18px]">0</h1>
+                    <img class="h-[30px] w-[30px]" src="assets/heart.png" alt="">
+                </div>
+
+                <div class="h-[52px] w-[123px] bg-[#ecfff0] rounded-3xl flex justify-center items-center gap-[10px]">
+                    <h1 class="font-extrabold text-[18px]">100</h1>
+                    <img class="h-[30px] w-[30px]" src="assets/coin.png" alt="">
+                </div>
+                
+                <div class="h-[52px] w-[123px] bg-[#13a63e] text-white rounded-3xl flex justify-center items-center gap-[10px] font-bold">
+                    <h1>0</h1>
+                    <h1>Copy</h1>
+                </div>
+            </div>
+        </div>
+    </header>
+            <!-- banner section -->
+    <section class="banner bg-gradient-to-r from-[#013223] via-[#006747] to-[#013223] text-white">
+        <div class="banner-content flex flex-col items-center py-5 ">
+            <img class="h-[92px] w-[92px] text-white" src="assets/logo.png" alt="">
+            <h1 class="text-[40px] font-bold">Emergency Service Directory</h1>
+            <p class="text-[20px] font-semibold">Government Emergency Services at Your Fingertip – A Project by  Government of the People’s Republic of Bangladesh</p>
+        </div>
+    </section>
+
+
+    <section class="my-8">
+        <div class="main-caontainer">
+            <div class="help-lines">
+                <div class="cart-national-emergency bg-white        rounded-xl shadow-[4px_4px_6px_rgba(0,0,0,0.4),_-4px_-4px_6px_rgba(255,255,255,0.3)] p-8">
+                    <div class="flex items-center justify-between">
+                        <div class="h-[50px] w-[50px] bg-[#ffe3e0] flex justify-center items-center rounded-xl">
+                            <img class=" h-8 w-8" src="assets/emergency.png" alt="">
+                        </div>
+                        <i class="fa-regular fa-heart"></i>
+                    </div>
+                    <h1 class="font-bold text-2xl">National Emergency Number</h1>
+                    <p class="text-lg">National Emergency</p>
+                    <h1 class="font-bold text-3xl mt-3"><span>999</span></h1>
+                    <p class="text-gray bg-[#f2f2f2] text-[#5C5C5C] rounded-2xl px-4 py-1 inline-block">All</p>
+                    <div class="common-btn mt-4">
+                        <button class="bg-white text-gray font-semibold py-2 px-4 w-44 rounded-xl border-2 border-gray-200"><i class="fa-regular fa-copy pr-5"></i>Copy</button>
+                        <button class="bg-[#13a63e] text-white font-semibold py-2 px-4 w-44 rounded-xl border-2 border-gray-200"><i class="fa-solid fa-phone pr-6"></i>Call</button>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="call-history">
+
+            </div>
+        </div>
+    </section>
+
+
+
 </body>
 </html>
