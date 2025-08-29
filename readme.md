@@ -5,6 +5,6 @@ querySelector and querySelectorAll:querySelector  onkly takes the first element 
 2.example: const takediv=document.createElement("div")
 parentdiv.appendChild(takediv)
 
-3.event bubbling is a DOM process where event where event first go in target elemant then it bubbleup through its parent and grandparents.it works like phase target phase bubbling phase ..
-
-4.
+3.event bubbling is a DOM process where event where event first go in target elemant then it bubbleup through its parent and grandparents.it works like phase target phase bubbling phase .
+4.event delegation is a technique where insted of childtag user use event listener to a parenttag.it is use for code resuability or error handling.
+5.
