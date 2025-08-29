@@ -32,7 +32,7 @@
                 </div>
                 
                 <div class="h-[52px] w-[123px] bg-[#13a63e] text-white rounded-3xl flex justify-center items-center gap-[10px] font-bold">
-                    <h1>0</h1>
+                    <h1 id="copy-count">0</h1>
                     <h1>Copy</h1>
                 </div>
             </div>
@@ -64,7 +64,7 @@
                     <h1 class="font-bold text-3xl mt-3"><span id="service-number-national">999</span></h1>
                     <p class="text-gray bg-[#f2f2f2] text-[#5C5C5C] rounded-2xl px-4 py-1 inline-block">All</p>
                         <div class="common-btn mt-4">
-                            <button class="bg-white text-gray font-semibold py-2 px-4 w-44 rounded-xl border-2 border-gray-200"><i class="fa-regular fa-copy pr-5"></i>Copy</button>
+                            <button id="copy-btn-national" class="bg-white text-gray font-semibold py-2 px-4 w-44 rounded-xl border-2 border-gray-200"><i class="fa-regular fa-copy pr-5"></i>Copy</button>
                             <button id="call-btn-national" class="bg-[#13a63e] text-white font-semibold py-2 px-4 w-44 rounded-xl border-2 border-gray-200"><i class="fa-solid fa-phone pr-6"></i>Call</button>
                             
                         </div>
@@ -84,7 +84,7 @@
                     <h1  class="font-bold text-3xl mt-3"><span id="service-number-police">999</span></h1>
                     <p class="text-gray bg-[#f2f2f2] text-[#5C5C5C] rounded-2xl px-4 py-1 inline-block">Police</p>
                         <div class="common-btn mt-4">
-                            <button  class="bg-white text-gray font-semibold py-2 px-4 w-44 rounded-xl border-2 border-gray-200"><i class="fa-regular fa-copy pr-5"></i>Copy</button>
+                            <button id="copy-btn-police"  class="bg-white text-gray font-semibold py-2 px-4 w-44 rounded-xl border-2 border-gray-200"><i class="fa-regular fa-copy pr-5"></i>Copy</button>
                             <button id="call-btn-police" class="bg-[#13a63e] text-white font-semibold py-2 px-4 w-44 rounded-xl border-2 border-gray-200"><i class="fa-solid fa-phone pr-6"></i>Call</button>
                             
                         </div>
@@ -103,7 +103,7 @@
                     <h1 id="service-number-fire" class="font-bold text-3xl mt-3"><span>999</span></h1>
                     <p class="text-gray bg-[#f2f2f2] text-[#5C5C5C] rounded-2xl px-4 py-1 inline-block">Fire</p>
                         <div class="common-btn mt-4">
-                            <button class="bg-white text-gray font-semibold py-2 px-4 w-44 rounded-xl border-2 border-gray-200"><i class="fa-regular fa-copy pr-5"></i>Copy</button>
+                            <button id="copy-btn-fire" class="bg-white text-gray font-semibold py-2 px-4 w-44 rounded-xl border-2 border-gray-200"><i class="fa-regular fa-copy pr-5"></i>Copy</button>
                             <button id="call-btn-fire" class="bg-[#13a63e] text-white font-semibold py-2 px-4 w-44 rounded-xl border-2 border-gray-200"><i class="fa-solid fa-phone pr-6"></i>Call</button>
                             
                         </div>
@@ -123,7 +123,7 @@
                     <h1 id="service-number-ambulance" class="font-bold text-3xl mt-3"><span>1994-999999</span></h1>
                     <p class="text-gray bg-[#f2f2f2] text-[#5C5C5C] rounded-2xl px-4 py-1 inline-block">Health</p>
                         <div class="common-btn mt-4">
-                            <button class="bg-white text-gray font-semibold py-2 px-4 w-44 rounded-xl border-2 border-gray-200"><i class="fa-regular fa-copy pr-5"></i>Copy</button>
+                            <button id="copy-btn-ambulance" class="bg-white text-gray font-semibold py-2 px-4 w-44 rounded-xl border-2 border-gray-200"><i class="fa-regular fa-copy pr-5"></i>Copy</button>
                             <button id="call-btn-ambulance" class="bg-[#13a63e] text-white font-semibold py-2 px-4 w-44 rounded-xl border-2 border-gray-200"><i class="fa-solid fa-phone pr-6"></i>Call</button>
                             
                         </div>
@@ -142,7 +142,7 @@
                     <h1 id="service-number-womenChild" class="font-bold text-3xl mt-3"><span>109</span></h1>
                     <p class="text-gray bg-[#f2f2f2] text-[#5C5C5C] rounded-2xl px-4 py-1 inline-block">Help</p>
                         <div class="common-btn mt-4">
-                            <button class="bg-white text-gray font-semibold py-2 px-4 w-44 rounded-xl border-2 border-gray-200"><i class="fa-regular fa-copy pr-5"></i>Copy</button>
+                            <button id="copy-btn-womenChild" class="bg-white text-gray font-semibold py-2 px-4 w-44 rounded-xl border-2 border-gray-200"><i class="fa-regular fa-copy pr-5"></i>Copy</button>
                             <button id="call-btn-womenChild" class="bg-[#13a63e] text-white font-semibold py-2 px-4 w-44 rounded-xl border-2 border-gray-200"><i class="fa-solid fa-phone pr-6"></i>Call</button>
                             
                         </div>
@@ -162,7 +162,7 @@
                     <h1 id="service-number-anti" class="font-bold text-3xl mt-3"><span>106</span></h1>
                     <p class="text-gray bg-[#f2f2f2] text-[#5C5C5C] rounded-2xl px-4 py-1 inline-block">Govt.</p>
                         <div class="common-btn mt-4">
-                            <button class="bg-white text-gray font-semibold py-2 px-4 w-44 rounded-xl border-2 border-gray-200"><i class="fa-regular fa-copy pr-5"></i>Copy</button>
+                            <button id="copy-btn-anti" class="bg-white text-gray font-semibold py-2 px-4 w-44 rounded-xl border-2 border-gray-200"><i class="fa-regular fa-copy pr-5"></i>Copy</button>
                             <button id="call-btn-anti" class="bg-[#13a63e] text-white font-semibold py-2 px-4 w-44 rounded-xl border-2 border-gray-200"><i class="fa-solid fa-phone pr-6"></i>Call</button>
                             
                         </div>
@@ -181,7 +181,7 @@
                     <h1 id="service-number-electricity" class="font-bold text-3xl mt-3"><span>16216</span></h1>
                     <p class="text-gray bg-[#f2f2f2] text-[#5C5C5C] rounded-2xl px-4 py-1 inline-block">Electricity</p>
                         <div class="common-btn mt-4">
-                            <button class="bg-white text-gray font-semibold py-2 px-4 w-44 rounded-xl border-2 border-gray-200"><i class="fa-regular fa-copy pr-5"></i>Copy</button>
+                            <button id="copy-btn-electricity" class="bg-white text-gray font-semibold py-2 px-4 w-44 rounded-xl border-2 border-gray-200"><i class="fa-regular fa-copy pr-5"></i>Copy</button>
                             <button id="call-btn-electricity" class="bg-[#13a63e] text-white font-semibold py-2 px-4 w-44 rounded-xl border-2 border-gray-200"><i class="fa-solid fa-phone pr-6"></i>Call</button>
                             
                         </div>
@@ -200,7 +200,7 @@
                     <h1 id="service-number-brac" class="font-bold text-3xl mt-3"><span>16445</span></h1>
                     <p class="text-gray bg-[#f2f2f2] text-[#5C5C5C] rounded-2xl px-4 py-1 inline-block">NGO</p>
                         <div class="common-btn mt-4">
-                            <button class="bg-white text-gray font-semibold py-2 px-4 w-44 rounded-xl border-2 border-gray-200"><i class="fa-regular fa-copy pr-5"></i>Copy</button>
+                            <button id="copy-btn-brac" class="bg-white text-gray font-semibold py-2 px-4 w-44 rounded-xl border-2 border-gray-200"><i class="fa-regular fa-copy pr-5"></i>Copy</button>
                             <button id="call-btn-brac" class="bg-[#13a63e] text-white font-semibold py-2 px-4 w-44 rounded-xl border-2 border-gray-200"><i class="fa-solid fa-phone pr-6"></i>Call</button>
                             
                         </div>
@@ -220,7 +220,7 @@
                     <h1 id="service-number-railway" class="font-bold text-3xl mt-3"><span>163</span></h1>
                     <p class="text-gray bg-[#f2f2f2] text-[#5C5C5C] rounded-2xl px-4 py-1 inline-block">Travel</p>
                         <div class="common-btn mt-4">
-                            <button class="bg-white text-gray font-semibold py-2 px-4 w-44 rounded-xl border-2 border-gray-200"><i class="fa-regular fa-copy pr-5"></i>Copy</button>
+                            <button id="copy-btn-railway" class="bg-white text-gray font-semibold py-2 px-4 w-44 rounded-xl border-2 border-gray-200"><i class="fa-regular fa-copy pr-5"></i>Copy</button>
                             <button id="call-btn-railway" class="bg-[#13a63e] text-white font-semibold py-2 px-4 w-44 rounded-xl border-2 border-gray-200"><i class="fa-solid fa-phone pr-6"></i>Call</button>
                             
                         </div>

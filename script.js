@@ -118,3 +118,93 @@ document.getElementById("clear-btn").addEventListener("click",function(){
     historydlt.innerHTML="";
 })
 
+
+//copy cart number
+
+async function numberOfservice(copyNumberid, copyCountid) {
+    const copyCount = document.getElementById(copyCountid);
+    const serviceNumberId = document.getElementById(copyNumberid);
+
+    if (!copyCount || !serviceNumberId) return;
+
+    const textCopy = serviceNumberId.innerText.trim();
+
+   
+    alert(`Copying the number: ${textCopy}`);
+
+    
+    const newCopyCount = parseInt(copyCount.innerText) || 0;
+    copyCount.innerText = newCopyCount + 1;
+
+    // Copy to clipboard
+    try {
+        await navigator.clipboard.writeText(textCopy);
+        console.log(textCopy);
+    } catch (err) {
+        const textarea = document.createElement('textarea');
+        textarea.value = textCopy;
+        document.body.appendChild(textarea);
+        textarea.select();
+        document.execCommand('copy');
+        document.body.removeChild(textarea);
+    }
+}
+
+// Attach event listener to the national button
+document.getElementById("copy-btn-national").addEventListener("click", function() {
+    numberOfservice("service-number-national", "copy-count");
+});
+
+//copy count for police
+
+document.getElementById("copy-btn-police").addEventListener("click", function() {
+    numberOfservice("service-number-police", "copy-count");
+});
+
+//copy cpount for fireservice
+
+document.getElementById("copy-btn-fire").addEventListener("click", function() {
+    numberOfservice("service-number-fire", "copy-count");
+});
+
+//copy cpount for ambulance
+
+document.getElementById("copy-btn-ambulance").addEventListener("click", function() {
+    numberOfservice("service-number-ambulance", "copy-count");
+});
+
+
+//copy cpount for WomenChild
+
+document.getElementById("copy-btn-womenChild").addEventListener("click", function() {
+    numberOfservice("service-number-womenChild", "copy-count");
+});
+
+
+//copy cpount for anti
+
+document.getElementById("copy-btn-anti").addEventListener("click", function() {
+    numberOfservice("service-number-anti", "copy-count");
+});
+
+
+//copy cpount for electricity
+
+document.getElementById("copy-btn-electricity").addEventListener("click", function() {
+    numberOfservice("service-number-electricity", "copy-count");
+});
+
+
+//copy cpount for brac
+
+document.getElementById("copy-btn-brac").addEventListener("click", function() {
+    numberOfservice("service-number-brac", "copy-count");
+});
+
+//copy cpount for railway
+
+document.getElementById("copy-btn-railway").addEventListener("click", function() {
+    numberOfservice("service-number-railway", "copy-count");
+});
+
+
